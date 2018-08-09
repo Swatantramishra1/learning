@@ -1,0 +1,15 @@
+.mordor-jq{
+    width:100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.mordor-jq-wrapper {
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-inline-box;
+}
+.mordor-jq-item {
+    background-color: #ccc;
+}

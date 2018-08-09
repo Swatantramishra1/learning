@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+.flex{
+    display: flex;
+}
+.card-wrpper {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 10;
+    background-color:  aqua;
+}
+.container {
+    top: 50px;
+    height: 900px;
+    overflow-y: scroll;
+    background-color: rebeccapurple;
+}
+ul {
+    list-style: none;
+    display: inline;
+}
+li{
+    float: left;
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.upper-header{
+    background-color: #252a2f;
+    padding: 5px 0;
+    color: white;
+    white-space: nowrap;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.octicon {
+    display: inline-block;
+    fill: currentColor;
+}
+.secondary-header{
+    background-color: #252a2f;
+}
+.profile-name{
+    width: 0%;
+    background-color: red;
+}
+.user-tabs{
+    width: 100%;
+    background-color: green;
+}
+@media (min-width:768px) {
+    .profile-name{
+        width: 25%;
+    }
+    .user-tabs{
+        width: 75%;
+    }
+}
+ul{
+    list-style: none;
+}
+.user-tabs > .container {
+    overflow: scroll;
+}

@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.flex{
+    display: flex;
+}
+.container{
+    position: relative;
+    flex-direction: column;
+}
+.header{
+    height: 45px;
+    
+
+}
+.content{
+    height: calc( 100vh - 100px);
+    padding: 5px;
+    overflow-y: scroll;
+
+}
+.footer-header{
+    height: 45px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.logo-img{
+    width: 100px;
+    height: 45px;
+}
+.logo{
+    flex-grow: 1;
+}
+.item-container{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item-container > i {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #525252fa;
+    font-size: 18px;
+}
+.icons-data{
+    flex-direction: column;
+    align-items: center;
+    color: #525252fa;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Roboto,sans-serif;
+}
+.active{
+    color: red;
+}
+.video-scope {
+    width: 100%;
+}
+.card{
+    flex-direction: column;
+    font-family: roboto, sans-serif;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom: 0.5px solid #525252fa;
+}
+.channel-logo{
+    height: 45px;
+    border-radius: 50%;
+}
+.channel-uploaded-time{
+    margin: 0;
+}
+.channel-name{
+    margin: 0;
+}
+.sub-header{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.right-action{
+    width: 7px;
+    text-align: right;
+    padding-right: 10px;
+}

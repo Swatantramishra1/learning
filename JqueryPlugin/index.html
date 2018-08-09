@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQUERY Plugins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script src="jquery-3.3.1.min.js"  ></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="lib.js"></script>
+</head>
+
+<body>
+        <h4>Jquery Plugins</h4>
+        <div class="mordor-jq">
+            <button class="mordor-left-arrow" onclick="prev()">
+                left
+            </button>
+            
+            <div class="mordor-jq-wrapper">
+                <div class="mordor-jq-item" data-index="1">Item 1</div>
+                <div class="mordor-jq-item" data-index="2">Item 2</div>
+                <div class="mordor-jq-item" data-index="3">Item 3</div>
+                <div class="mordor-jq-item" data-index="4">Item 4</div>
+                <div class="mordor-jq-item" data-index="5">Item 5</div>
+                <div class="mordor-jq-item" data-index="1">Item 6</div>
+                <div class="mordor-jq-item" data-index="2">Item7</div>
+                <div class="mordor-jq-item" data-index="3">Item 8</div>
+                <div class="mordor-jq-item" data-index="4">Item 9</div>
+                <div class="mordor-jq-item" data-index="5">Item 10</div>
+                <div class="mordor-jq-item" data-index="1">Item 11</div>
+                <div class="mordor-jq-item" data-index="2">Item 12</div>
+                <div class="mordor-jq-item" data-index="3">Item 13</div>
+            </div>
+      
+            <button class="mordor-right-arrow" onclick="next()">
+                right
+            </button>
+        </div>
+
+        <script>
+        
+        function next(){
+            _m('.mordor-right-arrow').next();
+        }
+        function prev()
+        {
+            _m('.mordor-left-arrow').prev();
+        }
+        _m('.mordor-jq').init({
+            noOfItemShow:3,
+            noOfItemScroll:3
+        });
+        
+        </script>
+</body>
+
+</html>
